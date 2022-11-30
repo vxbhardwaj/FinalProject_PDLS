@@ -1,1 +1,1 @@
-code to convert DICOM files to PNG format
+DICOM files to PNG format
