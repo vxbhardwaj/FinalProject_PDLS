@@ -6,7 +6,7 @@
 - We have done a comparative analysis of various Image object detection models on the basis of their MAP (mean average precision) scores, associated costs involved, and   the amount of training times
 - Our objective is to experiment with AutoML and different pretrained models (Masked-RCNN and YOLO on V100 and T4 GPUs) to find the best performing one which is cost-effective and takes less human effort to build. 
 
-#A description of the repository:
+# A description of the repository:
 AutomL folder contains: 
 Files:
 - create_test_jsonl.py to create jsonl files for test data
@@ -22,9 +22,9 @@ masked-rcnn - Files related to mask-RCNN
 
 yolo - Files related to YOLO v3
 
-Example commands to execute the code:
+# Example commands to execute the code:
 
 Jupyter notebooks can be run as is, with relevant files provided along side
 
 
-Results (including charts/tables) and your observations:
+# Results (including charts/tables) and your observations:
