@@ -7,11 +7,22 @@
 - Our objective is to experiment with AutoML and different pretrained models (Masked-RCNN and YOLO on V100 and T4 GPUs) to find the best performing one which is cost-effective and takes less human effort to build. 
 
 ## Repository Code Structure
+Jupyter notebooks can be run as is, with relevant files provided along side.
+
 ### automl folder
 Files:
 - create_annotation_csv.py to create annotation for the images
+```bash
+      python create_annotation_csv.py results/automl_annotations.csv gs://sample_bucket/train_images/
+```
 - create_test_jsonl.py to create jsonl files for test data
+```bash
+      python create_test_jsonl.py results/automl_test_json.jsonl gs://sample_bucket/test_images/
+```
 - create_submission_csv.py to convert automl predictions to kaggle's submission format
+```bash
+      python create_submission_csv.py results/predictions/faster_prediction_model
+```
 - results: This folder contains automl predictions related CSV and jsonl files
 
 ### dicom_to_png folder contains
@@ -31,10 +42,6 @@ Final model weights used to get mAP score on the test set are as follows. We don
 
 YOLOv3 weights: https://storage.googleapis.com/projsub/V100/rsna_yolov3_final.weights <br>
 Masked R-CNN weights:
-
-## Example commands to execute the code:
-
-Jupyter notebooks can be run as is, with relevant files provided along side
 
 
 ## Results (including charts/tables) and observations:
