@@ -1,0 +1,6 @@
+classes= 1
+train  = /home/vinnyfet/finalproj2/metadata/tr_list.txt
+valid  = /home/vinnyfet/finalproj2/metadata/val_list.txt
+names  = /home/vinnyfet/finalproj2/cfg/rsna.names
+backup = /home/vinnyfet/finalproj2/backup
+    
