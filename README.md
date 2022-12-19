@@ -11,26 +11,27 @@ Jupyter notebooks can be run as is, with relevant files provided along side.
 
 ### automl folder
 Files:
-- create_annotation_csv.py to create annotation for the images
+- create_annotation_csv.py converts the training annotations provided by Kaggle to format needed by AutoML
 ```bash
       python create_annotation_csv.py results/automl_annotations.csv gs://sample_bucket/train_images/
 ```
-- create_test_jsonl.py to create jsonl files for test data
+- create_test_jsonl.py read all test images and stores it in JSONL format with mimeType
 ```bash
       python create_test_jsonl.py results/automl_test_json.jsonl gs://sample_bucket/test_images/
 ```
-- create_submission_csv.py to convert automl predictions to kaggle's submission format
+- create_submission_csv.py AutoML run prediction in batches and create a JSONL file for each batch. This script merges all files into the CSV format
+required by Kaggle for submission
 ```bash
       python create_submission_csv.py results/predictions/faster_prediction_model
 ```
-- results: This folder contains automl predictions related CSV and jsonl files
+- results: This folder contains AutoML predictions and generate annotation CSV and jsonl files
 
 ### dicom_to_png folder contains
 This folder contains files related to converting DCM X ray images to PNG format (required for autoML training).
 
 ### masked-rcnn folder
 This folder contains code used to train Masked R-CNN There are three subfolder
-- best_model: This folder contains the notebook and test predictions from Masked R-CNN model that gave the best test mAP scores
+- best_model: This folder contains the notebook and test predictions CSV from Masked R-CNN model that gave the best test mAP scores
 - T4-exp: This folder contains the jupyter notebook which show the training and inference time on T4 GPU. t4-loss-acc-summary.csv captures the train/val loss, training time per epoch. t4-loss-plot.png is a plot of the train vs val loss observed.
 - V100-exp: This folder follows same structure as NVIDIA-T4-exp but contains results from experiment run on V100 GPU
 
@@ -43,8 +44,16 @@ This folder contains YOLO v3 related files and has the following two subfolders:
 ## Model weights
 Final model weights used to get mAP score on the test set are as follows. We don't have access to weight learned by AutoML. We directly get the test prediction use the batch prediction service.
 
-YOLOv3 weights: https://storage.googleapis.com/projsub/V100/rsna_yolov3_final.weights <br>
+YOLOv3 weights:
+
+T4 exp -https://storage.googleapis.com/projsub/T4/rsna_yolov3_final.weights <br>
+V100 exp - https://storage.googleapis.com/projsub/V100/rsna_yolov3_final.weights
+
 Masked R-CNN weights:
+
+Best model - https://storage.googleapis.com/projsub/MRCNN/best_model/mask_rcnn_pneumonia_final_weights.h5 <br>
+T4 exp - https://storage.googleapis.com/projsub/MRCNN/T4/mask_rcnn_final_weights.h5<br>
+V100 exp - https://storage.googleapis.com/projsub/MRCNN/V100/mask_rcnn_final_weights.h5
 
 
 ## Results (including charts/tables) and observations:
