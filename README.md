@@ -34,8 +34,10 @@ This folder contains code used to train Masked R-CNN There are three subfolder
 - T4-exp: This folder contains the jupyter notebook which show the training and inference time on T4 GPU. t4-loss-acc-summary.csv captures the train/val loss, training time per epoch. t4-loss-plot.png is a plot of the train vs val loss observed.
 - V100-exp: This folder follows same structure as NVIDIA-T4-exp but contains results from experiment run on V100 GPU
 
-### yolo
-Files related to YOLO v3
+### yolo folder
+This folder contains YOLO v3 related files and has the following two subfolders:
+- T4: This folder contains the notebook of YOLO v3 run on T4 GPU that has all train logs and time taken, Loss vs iterations graph, supplemental files, along with configuration files.
+- V100: This folder contains the notebook run on V100 GPU containing training and inference logs, time taken, Loss vs iterations graph, supplemental files, along with configuration files.
 
 ## Model weights
 Final model weights used to get mAP score on the test set are as follows. We don't have access to weight learned by AutoML. We directly get the test prediction use the batch prediction service.
