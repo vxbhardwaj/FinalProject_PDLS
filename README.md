@@ -21,7 +21,9 @@ dicom_to_png folder contains: files related to converting DCM X ray images to PN
 masked-rcnn - Files related to mask-RCNN
 
 yolo - Files related to YOLO v3:
+
 T4 final weights: https://storage.googleapis.com/projsub/T4/rsna_yolov3_final.weights
+
 V100 final weights: https://storage.googleapis.com/projsub/V100/rsna_yolov3_final.weights
 
 # Example commands to execute the code:
