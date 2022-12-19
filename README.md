@@ -49,7 +49,9 @@ Masked R-CNN weights:
 
 ![image](https://user-images.githubusercontent.com/76259177/208492672-7f0d4dd5-7055-4d4f-87c6-fb806603a5f8.png)
 
-![image](https://user-images.githubusercontent.com/76259177/208469300-497ad05c-c3ff-47f5-852d-fc39ab0195be.png)
+![image](https://user-images.githubusercontent.com/76259177/208493396-864dad8c-814c-4908-b8dd-56088e45a5c2.png)
+
+
 
 ![image](https://user-images.githubusercontent.com/76259177/208469359-7782454c-a5d0-4021-ad99-5dd47f836590.png)
 
