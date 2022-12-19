@@ -28,3 +28,19 @@ Jupyter notebooks can be run as is, with relevant files provided along side
 
 
 # Results (including charts/tables) and your observations:
+
+![image](https://user-images.githubusercontent.com/76259177/208469194-97ee416d-730b-4b65-bc11-797c3b7871fc.png)
+
+![image](https://user-images.githubusercontent.com/76259177/208469300-497ad05c-c3ff-47f5-852d-fc39ab0195be.png)
+
+![image](https://user-images.githubusercontent.com/76259177/208469359-7782454c-a5d0-4021-ad99-5dd47f836590.png)
+
+![image](https://user-images.githubusercontent.com/76259177/208469420-12a93ba9-0d66-417e-867b-6cc56012fcee.png)
+
+![image](https://user-images.githubusercontent.com/76259177/208469461-5bc7a9bb-22b2-4d3e-82c2-88a907ea9787.png)
+
+![image](https://user-images.githubusercontent.com/76259177/208469510-25154e90-0afd-4969-b8a7-df5d81698f91.png)
+
+
+
+
