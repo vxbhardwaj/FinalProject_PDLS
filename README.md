@@ -36,6 +36,7 @@ This folder contains code used to train Masked R-CNN There are three subfolder
 - V100-exp: This folder follows same structure as NVIDIA-T4-exp but contains results from experiment run on V100 GPU
 
 ### yolo folder
+We're using pretrained YOLO v3 model in https://github.com/pjreddie/darknet
 
 This folder contains YOLO v3 related files and has the following two subfolders:
 - T4: This folder contains the notebook of YOLO v3 run on T4 GPU that has all train logs and time taken, Loss vs iterations graph, supplemental files, along with configuration files.
